@@ -287,7 +287,7 @@ public class Capture extends CordovaPlugin {
      * Sets up an intent to capture images.  Result handled by onActivityResult()
      */
     private void captureImage(Request req) {
-        if (isMissingCameraPermissions(req,   Manifest.permission.READ_MEDIA_AUDIO))) return;
+        if (isMissingCameraPermissions(req,   Manifest.permission.READ_MEDIA_AUDIO)) return;
 
         // Save the number of images currently on disk for later
         this.numPics = queryImgDB(whichContentStore()).getCount();
